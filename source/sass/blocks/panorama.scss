@@ -1,0 +1,18 @@
+.panorama__description {
+  background-color: $light-gray;
+}
+
+.panorama__author {
+  @include font (14px, 24px, 700);
+}
+
+.panorama__date {
+  text-transform: uppercase;
+  @include font (12px, 24px, 300);
+}
+
+.panorama__likes {
+  color: $pink;
+  text-transform: uppercase;
+  @include font (12px, 24px, 400);
+}

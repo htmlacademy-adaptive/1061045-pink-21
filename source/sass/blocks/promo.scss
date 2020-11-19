@@ -1,0 +1,19 @@
+.promo {
+  background: $dark-gray;
+}
+
+.promo__list {
+  @include list-reset;
+}
+
+.promo__link {
+  margin: 0 auto;
+  display: block;
+  color: $white;
+  border-color: $white;
+}
+
+.promo__text {
+  color: $white;
+  @include font(14px, 24px, 300);
+}

@@ -1,0 +1,12 @@
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__title {
+  @include font(18px, 30px, 700);
+  color: $black;
+}
+
+.reviews__text {
+  @include font(14px, 30px, 400);
+}
