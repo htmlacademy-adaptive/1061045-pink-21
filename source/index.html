@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <a class="header__logo" href="#">
         <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
@@ -12,10 +13,18 @@
       <nav class="main-nav">
         <button class="main-nav__toggle"><span class="visually-hidden">Закрыть</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a>главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">конкурс</a></li>
-          <li class="main-nav__item"><a href="">html academy</a></li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">html academy</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -23,25 +32,25 @@
       <h1 class="visually-hidden">Pink</h1>
       <section class="promo">
         <h2 class="visually-hidden">Установить приложение на Desktop или смартфон</h2>
-        <p class="main__title promo__slogan">Взгляните на жизнь иначе!</p>
+        <p class="page__title promo__slogan">Взгляните на жизнь иначе!</p>
         <a class="promo__link button" href="#">Скачать приложение</a>
         <ul class="promo__list">
           <li class="promo__item promo__item--iphone">
-            <a href="https://www.apple.com/itunes/">iTunes</a>
+            <a href="https://www.apple.com/itunes/"><span class="visually-hidden">iTunes</span></a>
           </li>
           <li class="promo__item promo__item--android">
-            <a href="https://play.google.com/store">Google Play</a>
+            <a href="https://play.google.com/store"><span class="visually-hidden">Google Play</span></a>
           </li>
           <li class="promo__item promo__item--microsoft">
-            <a href="https://www.microsoft.com/en-us/store/apps/windows">Microsoft Store</a>
+            <a href="https://www.microsoft.com/en-us/store/apps/windows"><span class="visually-hidden">Microsoft Store</span></a>
           </li>
         </ul>
         <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши особенности</h2>
-        <p class="features__slogan main__title">Устали от серости мегаполиса?</p>
-        <p class="features__slogan main__title">Нам есть, что вам предложить!</p>
+        <p class="features__slogan page__title">Устали от серости мегаполиса?</p>
+        <p class="features__slogan page__title">Нам есть, что вам предложить!</p>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -89,9 +98,9 @@
         <table class="tariffs__table">
           <tr>
             <th></th>
-            <th>база 1,99 USD</th>
-            <th>стандарт 3,99 USD</th>
-            <th>анлим 9,99 USD</th>
+            <th class="tariffs__table-header"><span class="tariffs__name">база</span> 1,99 USD</th>
+            <th class="tariffs__table-header"><span class="tariffs__name">стандарт</span> 3,99 USD</th>
+            <th class="tariffs__table-header"><span class="tariffs__name">анлим</span> 9,99 USD</th>
           </tr>
           <tr>
             <td>Розовый фильтр</td>
@@ -121,18 +130,18 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__slogan main__title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__description page__title">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__phone">
-            <b>Звоните:</b>
-            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <h3 class="contacts__title">Звоните:</h3>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__email">
-            <b>Пишите:</b>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <h3 class="contacts__title">Пишите:</h3>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__address">
-            <b>Приезжайте в гости:</b>
-            <p>ул. Большая Конюшенная, 19/8</p>
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
         <div>
@@ -148,18 +157,18 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="">Twitter</a>
+              <a href="#"><span class="visually-hidden">Twitter</span></a>
             </li>
             <li class="social__item">
-              <a href="">Facebook</a>
+              <a href="#"><span class="visually-hidden">Facebook</span></a>
             </li>
             <li class="social__item">
-              <a href="">YouTube</a>
+              <a href="#"><span class="visually-hidden">YouTube</span></a>
             </li>
           </ul>
         </div>
-        <div class="footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
+        <div class="footer__copyright">
+          <p>Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
           </a>
