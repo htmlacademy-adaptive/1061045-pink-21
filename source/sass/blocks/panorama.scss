@@ -7,12 +7,12 @@
 }
 
 .panorama__date {
-  text-transform: uppercase;
   @include font (12px, 24px, 300);
+  text-transform: uppercase;
 }
 
 .panorama__likes {
+  @include font (12px, 24px, 400);
   color: $pink;
   text-transform: uppercase;
-  @include font (12px, 24px, 400);
 }

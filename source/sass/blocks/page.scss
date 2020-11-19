@@ -5,6 +5,7 @@
   background-color: $white;
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: $dark-gray;
+
   @include font(14px, 24px, 400);
   box-sizing: border-box; // посмотреть как пойдет
 }
@@ -26,6 +27,7 @@
 
 .page__title-h1 {
   color: $white;
+
   @include font(24px, 32px, 300);
   background-color: $dark-gray;
 }

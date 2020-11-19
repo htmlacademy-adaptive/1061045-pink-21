@@ -1,7 +1,7 @@
 .tariffs__table-header {
-  color: $white;
-  text-transform: uppercase;
   @include font(18px, 30px, 300);
+  text-transform: uppercase;
+  color: $white;
   background-color: $dark-gray;
 }
 
