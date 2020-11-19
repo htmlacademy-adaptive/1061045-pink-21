@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Фотографии пользователей - Pink</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="page">
   <header class="header">
     <a class="header__logo" href="index.html">
       <img src="https://via.placeholder.com/74x23" alt="Логотип Pink" width="74" height="23">
@@ -12,17 +13,25 @@
     <nav class="main-nav">
       <button class="main-nav__toggle"><span class="visually-hidden">Закрыть</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html">главная</a></li>
-        <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">конкурс</a></li>
-        <li class="main-nav__item"><a href="">html academy</a></li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">html academy</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="main">
-    <h1 class="main__title-h1">Фотографии пользователей</h1>
-    <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи!</p>
-    <p class="main__description">Видите, как не хватает ваших?</p>
+    <h1 class="page__title-h1">Фотографии пользователей</h1>
+    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи!</p>
+    <p class="page__description">Видите, как не хватает ваших?</p>
     <section class="panorama">
       <h2 class="panorama__title">ПАНОРАМА ДНЯ</h2>
       <img src="https://via.placeholder.com/320x137" alt="Фото панорамы дня" width="320" height="137">
@@ -154,8 +163,8 @@
             <div class="slider__pin">Кнопка изменения контраста фотографии</div>
           </div>
         </fieldset>
-        <button class="add-photo__button button" type="submit">Запостить</button>
-        <button class="add-photo__button button" type="reset">Отмена</button>
+        <button class="add-photo__button add-photo__button--submit button" type="submit">Запостить</button>
+        <button class="add-photo__button add-photo__button--reset button" type="reset">Отмена</button>
       </form>
     </section>
   </main>
@@ -167,18 +176,18 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="">Twitter</a>
+            <a href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li class="social__item">
-            <a href="">Facebook</a>
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social__item">
-            <a href="">YouTube</a>
+            <a href="#"><span class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+      <div class="footer__copyright">
+        <p>Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
         </a>
