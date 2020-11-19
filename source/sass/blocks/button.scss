@@ -1,0 +1,6 @@
+.button {
+  @include font(18px, 18px, 700);
+  border-radius: 29px;
+  border-width: 3px;
+  border-style: solid;
+}

@@ -1,0 +1,22 @@
+.photos__list {
+  @include list-reset;
+}
+
+.photos__item {
+  background-color: $light-gray;
+}
+
+.photos__author {
+  @include font (14px, 24px, 700);
+}
+
+.photos__date {
+  @include font (12px, 24px, 300);
+  text-transform: uppercase;
+}
+
+.photos__likes {
+  @include font (12px, 24px, 400);
+  color: $pink;
+  text-transform: uppercase;
+}

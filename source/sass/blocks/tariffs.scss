@@ -1,0 +1,10 @@
+.tariffs__table-header {
+  @include font(18px, 30px, 300);
+  text-transform: uppercase;
+  color: $white;
+  background-color: $dark-gray;
+}
+
+.tariffs__name {
+  @include font(16px, 30px, 700);
+}
