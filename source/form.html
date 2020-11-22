@@ -40,7 +40,7 @@
     <section class="contest">
       <h2 class="visually-hidden">Заполните форму для участия в конкурсе</h2>
       <form class="contest__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="contest__username">
+        <fieldset class="contest__contacts">
           <p>
             <label for="surname">ФАМИЛИЯ:</label>
             <input type="text" id="surname" name="user-surname" placeholder="Укажите фамилию *">
@@ -56,28 +56,28 @@
         </fieldset>
         <fieldset class="contest__achievements">
           <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul>
-            <li>
+          <ul class="contest__achievements-list">
+            <li class="contest__achievements-item">
               <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
               <label for="">Сделал селфи с акулой</label>
             </li>
-            <li>
+            <li class="contest__achievements-item">
               <input type="checkbox" id="burn-in-the-sun" name="burn-in-the-sun" checked>
               <label for="">Обгорел на пляже</label>
             </li>
-            <li>
+            <li class="contest__achievements-item">
               <input type="checkbox" id="saw-chack-norris" name="saw-chack-norris">
               <label for="">Видел Чака Норриса</label>
             </li>
-            <li>
+            <li class="contest__achievements-item">
               <input type="checkbox" id="bought-souvenirs" name="bought-souvenirs">
               <label for="">Накупил сувениров</label>
             </li>
-            <li>
+            <li class="contest__achievements-item">
               <input type="checkbox" id="held-tower" name="held-tower" checked>
               <label for="">Удержал башню</label>
             </li>
-            <li>
+            <li class="contest__achievements-item">
               <input type="checkbox" id="destroy-hotel" name="destroy-hotel">
               <label for="">Разгромил отель</label>
             </li>
@@ -93,9 +93,9 @@
             <input type="email" name="email" id="email" placeholder="Введите почту *">
           </p>
         </fieldset>
-        <fieldset>
+        <fieldset class="contest__app">
           <legend class="contest__title">С каким приложением путешествовали?</legend>
-          <ul>
+          <ul class="contest__app-list">
             <li>
               <input type="radio" name="app-type" id="iOS" value="iOS" checked>
               <label for="iOS">Pink для iOS</label>

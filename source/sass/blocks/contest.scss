@@ -1,0 +1,51 @@
+.contest__title,
+.contest__contacts label {
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest__title {
+  @include font-settings(14px, 18px, 400);
+}
+
+.contest__contacts label {
+  @include font-settings (14px, 30px, 400);
+}
+
+.contest__achievements {
+  background-color: $light-gray;
+}
+
+.contest__achievements-list,
+.contest__app-list {
+  @include list-reset();
+}
+
+.contest__app {
+  background-color: $light-gray;
+}
+
+.contest__button {
+  @include font-settings(18px, 30px, 700);
+  color: $white;
+  background-color: $green;
+  border: 2px solid $green;
+  text-transform: uppercase;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $dark-green;
+    border-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $gray;
+    border-color: $gray;
+  }
+}

@@ -11,9 +11,22 @@
   display: block;
   color: $white;
   border-color: $white;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $pink;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .promo__text {
-  @include font(14px, 24px, 300);
+  @include font-settings(14px, 24px, 300);
   color: $white;
 }
