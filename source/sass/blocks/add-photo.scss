@@ -5,9 +5,30 @@
 .add-photo__button--submit {
   color: $pink;
   border-color: $pink;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .add-photo__button--reset {
   opacity: 0.1;
   border-color: $dark-gray;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+    border-color: $dark-gray;
+  }
+
+  &:active {
+    background-color: $dark-gray;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
