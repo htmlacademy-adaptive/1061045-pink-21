@@ -6,7 +6,7 @@
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: $dark-gray;
 
-  @include font(14px, 24px, 400);
+  @include font-settings(14px, 24px, 400);
   box-sizing: border-box; // посмотреть как пойдет
 }
 
@@ -21,17 +21,17 @@
 }
 
 .page__title {
-  @include font(24px, 29px, 300);
+  @include font-settings(24px, 29px, 300);
   color: $dark-gray;
 }
 
 .page__title-h1 {
   color: $white;
 
-  @include font(24px, 32px, 300);
+  @include font-settings(24px, 32px, 300);
   background-color: $dark-gray;
 }
 
 .page__description {
-  @include font (14px, 30px, 400);
+  @include font-settings (14px, 30px, 400);
 }
