@@ -3,6 +3,6 @@
 }
 
 .features__title {
-  @include font(18px, 24px, 700);
+  @include font-settings(18px, 24px, 700);
   color: $black;
 }
