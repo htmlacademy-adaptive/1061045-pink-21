@@ -1,10 +1,26 @@
-.add-photo__form {
+.add-photo__slogan {
+  @include mobile-center-content;
+  text-align: center;
+}
+
+.add-photo__wrapper {
   background-color: $light-gray;
+  margin-top: 52px;
+  padding-top: 20px;
+}
+
+.add-photo__form {
+  @include mobile-center-content;
+}
+
+.add-photo__buttons {
+  padding: 38px 0 47px;
 }
 
 .add-photo__button--submit {
   color: $pink;
   border-color: $pink;
+  margin-bottom: 12px;
 
   &:hover,
   &:focus {
