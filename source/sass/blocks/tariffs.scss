@@ -1,10 +1,77 @@
+.tariffs {
+  background-color: $light-gray;
+  min-height: 480px;
+  padding-top: 100px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    min-height: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 155px;
+    min-height: 534px;
+  }
+}
+
+.tariffs__table {
+  border-collapse: collapse;
+  min-height: 277px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-center;
+    margin: 0 auto;
+    min-height: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-center;
+  }
+}
+
+.tariffs__table td {
+  border: 2px solid $gray;
+  min-height: 59px;
+  width: 276px;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 0;
+  }
+}
+
 .tariffs__table-header {
   @include font-settings(18px, 30px, 300);
   text-transform: uppercase;
   color: $white;
   background-color: $dark-gray;
+
+  &:nth-child(3) {
+    border-left: 2px solid $light-gray;
+    border-right: 2px solid $light-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 75px;
+    border-radius: 1px 0px 0px 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 0;
+  }
 }
 
 .tariffs__name {
   @include font-settings(16px, 30px, 700);
+  margin: 5px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.tariffs__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
