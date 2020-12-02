@@ -1,9 +1,15 @@
 .photos__list {
   @include list-reset;
+  @include mobile-center-content;
 }
 
 .photos__item {
   background-color: $light-gray;
+  margin-bottom: 20px;
+}
+
+.photos__description {
+  padding: 10px 17px;
 }
 
 .photos__author {

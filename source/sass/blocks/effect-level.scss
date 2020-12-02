@@ -1,0 +1,23 @@
+.add-photo__effect {
+  border: none;
+}
+
+.effect-level__value {
+  display: none;
+}
+
+.effect-level__line {
+  font-size: 0;
+  width: 86%;
+  height: 2px;
+  background-color:$dark-gray;
+}
+
+.effect-level__pin {
+  width: 14px;
+  height: 14px;
+  background: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: move;
+}

@@ -4,16 +4,58 @@
   text-transform: uppercase;
 }
 
+.contest__form fieldset {
+  padding: 0;
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+}
+
 .contest__title {
   @include font-settings(14px, 18px, 400);
+  text-align: center;
+  padding: 42px 0 22px;
+}
+
+.contest__contacts {
+  @include mobile-center-content;
+}
+
+.contest__contacts p {
+  display: flex;
+  flex-direction: column;
 }
 
 .contest__contacts label {
   @include font-settings (14px, 30px, 400);
 }
 
-.contest__achievements {
+.contest__contacts input,
+.contest__comment-message {
+  border: 2px solid $gray;
+  border-radius: 1px;
+}
+
+.contest__contacts input {
+  @include font-settings (18px, 30px, 400);
+  color: $dark-gray;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  min-height: 22px;
+}
+
+.contest__achievements,
+.contest__app {
   background-color: $light-gray;
+  margin: 0;
+}
+
+.contest__achievements legend,
+.contest__app legend {
+  background-color: $light-gray;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .contest__achievements-list,
@@ -21,17 +63,48 @@
   @include list-reset();
 }
 
-.contest__app {
-  background-color: $light-gray;
+.contest__achievements-list {
+  @include mobile-center-content;
+  margin-top: 20px;
+}
+
+.contest__achievements-item {
+  margin-bottom: 47px;
+  padding-left: 30px;
+}
+
+.contest__app-list {
+  @include mobile-center-content;
+  margin-top: 20px;
+}
+
+.contest__app-item {
+  margin-bottom: 28px;
+  padding-left: 38px;
+}
+
+.contest__comment {
+  @include mobile-center-content;
+  margin-bottom: 42px;
+}
+
+.contest__comment-message {
+  @include font-settings (18px, 30px, 400);
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  width: 100%;
+  padding: 22px 20px;
 }
 
 .contest__button {
   @include font-settings(18px, 30px, 700);
+  @include mobile-center-content;
   color: $white;
   background-color: $green;
   border: 2px solid $green;
   text-transform: uppercase;
   border-radius: 1px;
+  display: block;
+  min-height: 59px;
 
   &:hover,
   &:focus,

@@ -1,37 +1,46 @@
 .page {
+  @include font-settings(14px, 24px, 400);
   margin: 0;
   padding: 0;
   min-width: 320px;
   background-color: $white;
   font-family: "Open Sans", "Tahoma", sans-serif;
   color: $dark-gray;
-
-  @include font-settings(14px, 24px, 400);
   box-sizing: border-box; // посмотреть как пойдет
-}
-
-.page img {
-  max-width: 100%;
-  height: auto;
-  border-style: none;
-}
-
-.page a {
-  text-decoration: none;
 }
 
 .page__title {
   @include font-settings(24px, 29px, 300);
   color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    @include font-settings(40px, 54px, 300);
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(50px, 68px, 300);
+  }
+}
+
+.page__title-wrapper {
+  background-color: $dark-gray;
+  min-height: 171px;
 }
 
 .page__title-h1 {
-  color: $white;
-
   @include font-settings(24px, 32px, 300);
-  background-color: $dark-gray;
+  @include mobile-center-content;
+  padding-top: 36px;
+  color: $white;
+  text-align: center;
+  width: 81%;
 }
 
 .page__description {
   @include font-settings (14px, 30px, 400);
+  @include mobile-center-content;
+  text-align: center;
+  padding-top: 54px;
+  margin-bottom: 50px;
 }

@@ -1,12 +1,76 @@
 .reviews__list {
   @include list-reset;
+  @include mobile-center-content;
+  text-align: center;
+  margin-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-center;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.reviews__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 135px;
+  }
 }
 
 .reviews__title {
   @include font-settings(18px, 30px, 700);
+  letter-spacing: 0.9px;
   color: $black;
+  margin-bottom: 15px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__autor-info {
+  line-height: 30px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__text {
   @include font-settings(14px, 30px, 400);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    order: 0; // не работает!
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 688px;
+    margin: 0 auto 12px;
+  }
 }
