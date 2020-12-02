@@ -3,4 +3,11 @@
   border-radius: 29px;
   border-width: 3px;
   border-style: solid;
+  display: block;
+  min-height: 55px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
 }
