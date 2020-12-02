@@ -6,6 +6,7 @@
 
 .contest__form fieldset {
   padding: 0;
+
   @media (max-width: $mobile-width-only) {
     border: none;
   }
