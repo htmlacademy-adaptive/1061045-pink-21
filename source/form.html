@@ -32,10 +32,11 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="page__title-h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page__title-wrapper">
+      <h1 class="page__title-h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <p class="page__description">Поделитесь своей историей и получите
-      шанс выиграть ценный приз — 1000
-      миль на вашу бонусную карту!
+      шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
     </p>
     <section class="contest">
       <h2 class="visually-hidden">Заполните форму для участия в конкурсе</h2>
@@ -55,7 +56,7 @@
           </p>
         </fieldset>
         <fieldset class="contest__achievements">
-          <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="contest__title">Ваши безбашенные достижения&#160в&#160путешествии</legend>
           <ul class="contest__achievements-list">
             <li class="contest__achievements-item">
               <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
@@ -96,15 +97,15 @@
         <fieldset class="contest__app">
           <legend class="contest__title">С каким приложением путешествовали?</legend>
           <ul class="contest__app-list">
-            <li>
+            <li class="contest__app-item">
               <input type="radio" name="app-type" id="iOS" value="iOS" checked>
               <label for="iOS">Pink для iOS</label>
             </li>
-            <li>
+            <li class="contest__app-item">
               <input type="radio" name="app-type" id="Android" value="Android">
               <label for="Android">Pink на Android</label>
             </li>
-            <li>
+            <li class="contest__app-item">
               <input type="radio" name="app-type" id="Windows" value="Windows">
               <label for="Windows">Windows Phone</label>
             </li>
@@ -112,7 +113,7 @@
         </fieldset>
         <fieldset class="contest__comment">
           <legend class="contest__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-          <textarea class="contest__comment-message" name="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="contest__comment-message" name="comment" cols="30" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
         <button class="contest__button" type="submit">Отправить форму</button>
         <small>* — обязательные поля</small>
@@ -138,10 +139,20 @@
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright copyright">
         <p>Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
+          <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426
+            0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701
+            23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408
+            20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344
+            25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957
+            16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921
+            18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155
+            20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561
+            12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+          </svg>
         </a>
       </div>
     </div>
