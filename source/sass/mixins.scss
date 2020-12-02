@@ -9,3 +9,13 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin mobile-center-content () {
+  margin: 0 auto;
+  width: 88%;
+}
+
+@mixin desktop-center-content () {
+  margin: 0 auto;
+  width: 940px;
+}

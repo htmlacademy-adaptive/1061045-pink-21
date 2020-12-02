@@ -1,14 +1,40 @@
 .main-nav {
   @include font-settings(18px, 32px, 700);
+
+  @media (min-width: $desktop-width) {
+    @include font-settings(18px, 18px, 400);
+    width: 600px;
+    border: 1px solid green;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  background-color: $dark-gray;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .main-nav__item {
-  color: $white;
+  padding-top: 16px;
+  min-height: 63px;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {
@@ -24,5 +50,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-transform: none;
   }
 }

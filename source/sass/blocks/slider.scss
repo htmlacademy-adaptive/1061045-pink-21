@@ -1,0 +1,32 @@
+.slider__option {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.slider__toggles {
+  margin: 30px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  box-sizing: content-box;
+  border: none;
+}
+
+.slider__toggle--current {
+  border: 3px solid $dark-gray;
+  background-color: $white;
+}

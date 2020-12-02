@@ -30,20 +30,21 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="page__title-h1">Фотографии пользователей</h1>
-    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи!</p>
-    <p class="page__description">Видите, как не хватает ваших?</p>
+    <div class="page__title-wrapper">
+      <h1 class="page__title-h1">Фотографии пользователей</h1>
+    </div>
+    <p class="page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section class="panorama">
       <h2 class="panorama__title">ПАНОРАМА ДНЯ</h2>
       <img src="https://via.placeholder.com/320x137" alt="Фото панорамы дня" width="320" height="137">
       <div class="panorama__description">
-        <p>
+        <h3>
           <span class="panorama__author">Анна</span>
           <span class="panorama__date">(5 минут назад)</span>
-        </p>
-        <blockquote class="panorama__caption">Прыгать или нет? Напишите в комментарии свой совет и
+        </h3>
+        <p class="panorama__caption">Прыгать или нет? Напишите в комментарии свой совет и
           смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-        </blockquote>
+        </p>
         <p class="panorama__likes">Нравится:
           <span class="panorama__likes-count">215</span>
         </p>
@@ -56,79 +57,91 @@
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Левон</span>
-            <span class="photos__date">(5 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">356</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Левон</span>
+              <span class="photos__date">(5 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">356</span>
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Антон</span>
-            <span class="photos__date">(12 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Соседи будут рады!</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">666</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Антон</span>
+              <span class="photos__date">(12 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Соседи будут рады!</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">666</span>
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Борис</span>
-            <span class="photos__date">(20 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">215</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Борис</span>
+              <span class="photos__date">(20 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">215</span>
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Сергей</span>
-            <span class="photos__date">(25 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Самая кубанская в мире!</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">4</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Сергей</span>
+              <span class="photos__date">(25 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Самая кубанская в мире!</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">4</span>
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Максим</span>
-            <span class="photos__date">(40 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Где снег-то?</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">150</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Максим</span>
+              <span class="photos__date">(40 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Где снег-то?</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">150</span>
+            </p>
+          </div>
         </li>
         <li class="photos__item">
           <a class="photos__to-big-photo" href="#">
             <img src="https://via.placeholder.com/280x180" alt="">
           </a>
-          <h3 class="photos__title">
-            <span class="photos__author">Надежда</span>
-            <span class="photos__date">(45 часов назад)</span>
-          </h3>
-          <p class="photos__caption">Всем GM и взаимные лайки!</p>
-          <p class="photos__likes">Нравится:
-            <span class="photos__likes-count">2560</span>
-          </p>
+          <div class="photos__description">
+            <h3 class="photos__title">
+              <span class="photos__author">Надежда</span>
+              <span class="photos__date">(45 часов назад)</span>
+            </h3>
+            <p class="photos__caption">Всем GM и взаимные лайки!</p>
+            <p class="photos__likes">Нравится:
+              <span class="photos__likes-count">2560</span>
+            </p>
+          </div>
         </li>
       </ul>
     </section>
@@ -136,37 +149,38 @@
       <h2 class="visually-hidden">Добавить свое фото</h2>
       <p class="add-photo__slogan">Затмите их всех!</p>
       <p class="add-photo__slogan">Выкладывайте все, что накопилось в телефоне!</p>
-      <form class="add-photo__form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="add-photo__preview">
-          <img src="https://via.placeholder.com/280x374" alt="" width="280" height="374">
-        </div>
-        <fieldset>
-          <input type="number" name="size-level" value="80">
-          <button class="reviews__button" type="button">Обрезка</button>
-          <div class="add-photo__slider slider">
-            <div class="slider__line">Размер фотографии</div>
-            <div class="slider__pin">Кнопка изменения размера фотографии</div>
+      <div class="add-photo__wrapper">
+        <form class="add-photo__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="add-photo__preview">
+            <img src="https://via.placeholder.com/280x374" alt="" width="280" height="374">
           </div>
-        </fieldset>
-        <fieldset>
-          <input type="number" name="fill-level" value="80">
-          <button class="reviews__button" type="button">Заливка</button>
-          <div class="add-photo__slider slider">
-            <div class="slider__line">Размер фотографии</div>
-            <div class="slider__pin">Кнопка изменения заливки фотографии</div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <input type="number" name="contrast-level" value="80">
-          <button class="reviews__button" type="button">Контраст</button>
-          <div class="add-photo__slider slider">
-            <div class="slider__line">Размер фотографии</div>
-            <div class="slider__pin">Кнопка изменения контраста фотографии</div>
-          </div>
-        </fieldset>
-        <button class="add-photo__button add-photo__button--submit button" type="submit">Запостить</button>
-        <button class="add-photo__button add-photo__button--reset button" type="reset">Отмена</button>
-      </form>
+          <fieldset class="add-photo__effect effect-level">
+            <input class="effect-level__value" type="number" name="size-level" value="80">
+            <button class="reviews__button" type="button">Обрезка</button>
+            <div class="effect-level__line">
+              <div class="effect-level__pin" tabindex="0">Кнопка изменения размера фотографии</div>
+            </div>
+          </fieldset>
+          <fieldset class="add-photo__effect effect-level">
+            <input class="effect-level__value" type="number" name="fill-level" value="80">
+            <button class="reviews__button" type="button">Заливка</button>
+            <div class="effect-level__line">
+              <div class="effect-level__pin" tabindex="0">Кнопка изменения заливки фотографии</div>
+            </div>
+          </fieldset>
+          <fieldset class="add-photo__effect effect-level">
+            <input class="effect-level__value" type="number" name="contrast-level" value="80">
+            <button class="reviews__button" type="button">Контраст</button>
+            <div class="effect-level__line">
+              <div class="effect-level__pin" tabindex="0">Кнопка изменения контраста фотографии</div>
+            </div>
+          </fieldset>
+          <p class="add-photo__buttons">
+            <button class="add-photo__button add-photo__button--submit button" type="submit">Запостить</button>
+            <button class="add-photo__button add-photo__button--reset button" type="reset">Отмена</button>
+          </p>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -187,10 +201,20 @@
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copyright copyright">
         <p>Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426
+            0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701
+            23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408
+            20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344
+            25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957
+            16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921
+            18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155
+            20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561
+            12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+          </svg>
         </a>
       </div>
     </div>
