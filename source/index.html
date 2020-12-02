@@ -8,50 +8,66 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__logo" href="#">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Закрыть</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">html academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Pink</h1>
-      <section class="promo">
+      <section class="intro">
         <h2 class="visually-hidden">Установить приложение на Desktop или смартфон</h2>
-        <p class="page__title promo__slogan">Взгляните на жизнь иначе!</p>
-        <a class="promo__link button" href="#">Скачать приложение</a>
-        <ul class="promo__list">
-          <li class="promo__item promo__item--iphone">
-            <a href="https://www.apple.com/itunes/"><span class="visually-hidden">iTunes</span></a>
-          </li>
-          <li class="promo__item promo__item--android">
-            <a href="https://play.google.com/store"><span class="visually-hidden">Google Play</span></a>
-          </li>
-          <li class="promo__item promo__item--microsoft">
-            <a href="https://www.microsoft.com/en-us/store/apps/windows"><span class="visually-hidden">Microsoft Store</span></a>
-          </li>
-        </ul>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="intro__slogan-wrapper">
+          <p class="page__title intro__slogan">Взгляните на жизнь иначе!</p>
+        </div>
+        <div class="intro__content">
+          <a class="intro__button button" href="#">Скачать приложение</a>
+          <ul class="intro__list">
+            <li class="intro__item intro__item--iphone">
+              <a href="https://www.apple.com/itunes/">
+                <span class="visually-hidden">iTunes</span>
+              </a>
+            </li>
+            <li class="intro__item intro__item--android">
+              <a href="https://play.google.com/store">
+                <span class="visually-hidden">Google Play</span>
+              </a>
+            </li>
+            <li class="intro__item intro__item--microsoft">
+              <a href="https://www.microsoft.com/en-us/store/apps/windows">
+                <span class="visually-hidden">Microsoft Store</span>
+              </a>
+            </li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши особенности</h2>
-        <p class="features__slogan page__title">Устали от серости мегаполиса?</p>
-        <p class="features__slogan page__title">Нам есть, что вам предложить!</p>
+        <div class="features__slogan">
+          <p class="page__title">Устали от серости мегаполиса?</p>
+          <p class="page__title">Нам есть, что вам <br>предложить!</p>
+        </div>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -62,76 +78,97 @@
             <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
+            <h3 class="features__title">Заводит новых&#160;друзей</h3>
             <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
-      <!--  Начиная с версии для планшета
+      <!-- Начиная с версии для планшета -->
       <section class="research">
-        <h2 class="visually-hidden">Польза от приложения по мнению ученых</h2>
-        <b>Эффект на 24 часа!</b>
-        <p>Британские ученые провели исследования
-          и доказали, что положительный эффект
-          от использования приложения длится целые сутки!
-        </p>
-        <a href="#">Узнать больше об исследовании</a>
+        <div class="research__wrapper">
+          <h2 class="visually-hidden">Исследования ученых</h2>
+          <h3 class="research__title">Эффект на&#160;24 часа!</h3>
+          <p class="research__description">Британские ученые провели исследования
+            и доказали, что&#160;положительный эффект
+            от&#160;использования приложения длится целые сутки!
+          </p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </section>
-    -->
-      <section class="reviews">
+      <section class="reviews slider">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
             <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__autor-info">25 лет, водитель трамвая</p>
             <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </blockquote>
           </li>
+          <li class="reviews__item slider__item visually-hidden">
+            <h3 class="reviews__title">Федор Кузнецов</h3>
+            <p class="reviews__autor-info">29 лет, программист</p>
+            <blockquote class="reviews__text">«Я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
+          </li>
+          <li class="reviews__item slider__item visually-hidden">
+            <h3 class="reviews__title">Иван Смирнов</h3>
+            <p class="reviews__autor-info">38 лет, водитель маршрутки</p>
+            <blockquote class="reviews__text">«Это приложение перевернуло мою маршрутку»
+            </blockquote>
+          </li>
         </ul>
-        <div class="reviews__toggles">
-          <button class="reviews__button" type="button">1</button>
-          <button class="reviews__button" type="button">2</button>
-          <button class="reviews__button" type="button">3</button>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
         </div>
       </section>
-      <section class="tariffs">
+      <section class="tariffs slider">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <table class="tariffs__table">
+        <table class="tariffs__table slider__list">
           <tr>
-            <th></th>
-            <th class="tariffs__table-header"><span class="tariffs__name">база</span> 1,99 USD</th>
-            <th class="tariffs__table-header"><span class="tariffs__name">стандарт</span> 3,99 USD</th>
-            <th class="tariffs__table-header"><span class="tariffs__name">анлим</span> 9,99 USD</th>
+            <th class="slider__option"></th>
+            <th class="tariffs__table-header">
+              <p class="tariffs__name">база</p> 1,99 USD
+            </th>
+            <th class="tariffs__table-header">
+              <p class="tariffs__name">стандарт</p> 3,99 USD
+            </th>
+            <th class="tariffs__table-header">
+              <p class="tariffs__name">анлим</p> 9,99 USD
+            </th>
           </tr>
           <tr>
+            <td class="slider__option">Розовый фильтр</td>
             <td>Розовый фильтр</td>
-            <td>да</td>
-            <td>да</td>
-            <td>да</td>
+            <td>Розовый фильтр</td>
+            <td>Розовый фильтр</td>
           </tr>
           <tr>
+            <td class="slider__option">Смайлики</td>
             <td>Смайлики</td>
-            <td>нет</td>
-            <td>да</td>
-            <td>да</td>
+            <td>Смайлики</td>
+            <td>Смайлики</td>
           </tr>
           <tr>
+            <td class="slider__option">Комментарии</td>
             <td>Комментарии</td>
-            <td>нет</td>
-            <td>нет</td>
-            <td>да</td>
+            <td>Комментарии</td>
+            <td>Комментарии</td>
           </tr>
         </table>
-        <p class="tariffs__toggles">
-          <button class="tariffs__button" type="button">1</button>
-          <button class="tariffs__button" type="button">2</button>
-          <button class="tariffs__button" type="button">3</button>
+        <p class="tariffs__toggles slider__toggles">
+          <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__description page__title">Остались вопросы?</p>
+        <p class="contacts__description page__title">Свяжитесь с нами!</p>
         <div class="contacts__wrapper">
-          <p class="contacts__description page__title">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__phone">
             <h3 class="contacts__title">Звоните:</h3>
             <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -168,10 +205,20 @@
             </li>
           </ul>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright copyright">
           <p>Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426
+              0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701
+              23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408
+              20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344
+              25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957
+              16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921
+              18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155
+              20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561
+              12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+            </svg>
           </a>
         </div>
       </div>
